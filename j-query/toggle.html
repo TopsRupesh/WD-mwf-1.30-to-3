@@ -1,0 +1,72 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style> 
+#content, #dropdown {
+  padding: 5px;
+  text-align: center;
+  background-color: green;
+  border: 1px solid black;
+  font-size: 25px;
+}
+
+#content {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="dropdown">slide the panel down or up
+  <br>
+  <button>click here </button>
+</div>
+<div id="content">Hello world!</div>
+
+</body>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    // $("#content").slideDown();
+    // $("#content").slideUp();
+
+      $("#content").slideToggle();
+
+
+
+  });
+})
+
+
+
+
+
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//       $("#content").slideDown();
+      // $("#content").slideUp();
+      // $("#content").slideToggle();
+    // });
+
+// }); 
+  // $(document).ready(function(){
+  //   $("button").click(function(){
+      
+  //     $("#content").slideToggle()
+  //   });
+  // });
+
+
+// $(document).ready(function(){
+//   $("button").click(function(){
+    
+//     $("#content").slideDown()
+//     $("#content").slideUp()
+//     $("#content").slideToggle()
+//   });
+// });
+</script>
+</html>
